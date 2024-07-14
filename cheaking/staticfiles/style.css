@@ -1,0 +1,97 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(139, 0, 139,0.1);
+}
+
+.header{
+    background-color: rgb(139, 0, 139);
+   border-radius: 10px;
+   max-width: 1000px;
+   margin: auto;
+
+}
+.headername{
+    letter-spacing: 3px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size:  40px;
+    text-align: center;
+    color: lightgoldenrodyellow;
+    text-shadow: 10px 5px 10px white;
+    margin: auto;
+    padding: 0 0px;
+
+}
+.headergreetings1{
+    text-align: center;
+    color: antiquewhite;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+
+}
+.headergreetings2{
+    text-align: center;
+    color: lightgoldenrodyellow;
+    padding: 5px;
+    margin: auto;
+    
+}
+main{
+    max-width: 1000px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgb(139, 0, 139,0.2);
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+
+}
+.listtopic{
+    margin: auto;
+    padding: 20px ;
+    color: rgb(83, 24, 83);
+}
+.list-container{
+    padding: 10px;
+
+}
+.list-container div{
+    padding: 10px;
+    color:rgb(139, 0, 139) ;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+.inquiries{
+    text-align: center;
+    border: 15px solid rgb(139, 0, 139);
+    padding: 20px;
+     margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    color: rgb(139, 0, 139);
+    width: 300px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0,0.1);
+    position: sticky ;
+    bottom: 0;
+
+}
+footer{
+    max-width: 700px;
+    color: rgb(83, 24, 83);
+    word-spacing: 5px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.164);
+    margin: auto;
+    
+
+
+
+}
+.name{
+    text-shadow: 2px 2px 5px white ;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Bookings</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'view_booking.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Bookings</h1>
+        <form >
+            {% csrf_token %}
+            <label for="search">Search by Name</label>
+            <input type="text" id="search" name="search">
+            <button type="submit">Search</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                     <th>Phone</th>
+                    <th>Location</th>
+                     
+                    <th>Service</th>
+                    <th>Message</th>
+                    <th>date & Time</th>
+                </tr>
+            </thead>
+            <tbody id="contacts-list">
+                 <tr>
+                     
+                </tr>
+                 
+            </tbody>
+        </table>
+    </div>
+    <ul >
+
+
+    </ul>
+    <script src="{% static 'connect.js' %}"></script>
+</body>
+</html>

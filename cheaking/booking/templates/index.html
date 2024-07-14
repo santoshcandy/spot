@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Gowtham Plumbing Works</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: rgb(216, 216, 216);
+
+        }
+        .hero {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 50px 0;
+            animation: fadeIn 2s;
+            margin-top: 0;
+            
+        }
+        .aboutus{
+            background-color: rgb(255, 255, 255);
+            animation: fadeIn 4s;
+            padding: 40px;
+         }
+        .hero h1 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 3em;
+            letter-spacing: 5px;
+            word-spacing: 10px;
+            font-weight:  bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px rgb(150, 68, 129),0 0 20px rgb(218, 70, 181);
+            animation: slideInDown 1s;
+        }
+        .hero p {
+            font-size: 1.5em;
+            animation: slideInUp 1s;
+        }
+        .services {
+            padding: 50px 0;
+            background: #f9f9f9;
+        }
+        .services h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 2s;
+        }
+        .service-item {
+            margin-bottom: 30px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        .service-item h4 {
+            margin-top: 20px;
+        }
+        .service-icon {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        .logo {
+            font-family: 'Brush Script MT', cursive; /* Calligraphic font */
+            font-size: 15px; /* Font size */
+            font-weight: bold; /* Bold text */
+            color: #000000; /* Text color */
+            padding: 8px 16px; /* Padding */
+            border: 2px solid #000000; /* Border style */
+            border-radius: 8px; /* Border radius */
+            text-transform: uppercase; /* Uppercase text */
+            letter-spacing: 2px; /* Letter spacing */
+            display: inline-block; /* Display inline */
+        }
+        .navbar {
+            background-color: #ffffff !important;  
+            border-bottom: 1px #000000 solid;
+            backdrop-filter: blur(30px);
+         }
+        .navbar-brand, .nav-link {
+            color: #000000 !important; /* White text */
+            font-weight: 700;
+        }
+         .nav-link {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            color: black;
+        }
+          .nav-link:active {
+            color: green;
+        }
+        
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                 font-size: 2em;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            .hero{
+                padding: 40px 0;
+
+            }
+            .hero h4{
+               font-size: 1.5em;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            margin-bottom: 10px;
+            font-weight:bold;
+            }
+            .logotit{
+                display: none;
+            }
+            .navbars ul{
+                display: flex;
+                margin: auto;
+             }
+            .nav-link {
+                padding-left: 10px;
+                padding-right: 10px;
+              color: black;
+        }
+        }
+        .sticky-bottom a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .sticky-bottom {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+         <!-- Navigation -->
+         <nav  class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="logo logotit">Sri Gowtham Plumbing Works</div>
+    
+                </a>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="  navbars justify-content-end" id="navbarNav">
+                    <ul class="nav">
+                        <li class=" ">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class=" ">
+                            <a class="nav-link " href="#services">Services</a>
+                        </li>
+                        <li class=" ">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class=" ">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Hero Section -->
+    <div id="home" class="hero">
+       
+        <div class="container">
+            <h3>Welcome To Our</h3>
+            <h1> Sri Gowtham Plumbing Works</h1>
+            <p>Hello! We're your trusted experts for all your plumbing needs</p>
+        </div>
+    </div>
+
+  <!-- service section -->
+    <div id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="row service-opn">
+                <div class="col-md-6 service-item">
+                    <div class="service-icon"><i class="fas fa-tint"></i></div>
+                    <h4>Bathroom Leakages</h4>
+                    <p>We are experts in finding and rectifying bathroom leakages</p>
+                </div>
+                <div class="col-md-6 service-item">
+                    <div class="service-icon"><i class="fas fa-water"></i></div>
+                    <h4>Water Line Airblock Detection</h4>
+                    <p>Water line airblock detection and resolution</p>
+                </div>
+                <div class="col-md-6 service-item">
+                    <div class="service-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <h4>Emergency Plumbing Services</h4>
+                    <p>Emergency plumbing services</p>
+                </div>
+                <div class="col-md-6 service-item">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h4>Pipe Leakage Detection</h4>
+                    <p>Pipe leakage detection and repair</p>
+                </div>
+                <div class="col-md-6 service-item">
+                    <div class="service-icon"><i class="fas fa-shower"></i></div>
+                    <h4>Tank Leakage Detection</h4>
+                    <p>Tank leakage detection and repair</p>
+                </div>
+                <div class="col-md-6 service-item">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <h4>New Building Plumbing</h4>
+                    <p>Professional plumbing work for new buildings</p>
+                </div>
+                <div class="col-md-6 service-item">
+                    <div class="service-icon"><i class="fas fa-cloud-rain"></i></div>
+                    <h4>Rainwater Saving Systems</h4>
+                    <p>Installation of rainwater saving systems</p>
+                </div>
+                <div class="col-md-6 service-item">
+                    <div class="service-icon"><i class="fas fa-water"></i></div>
+                    <h4>New Borewell Installation</h4>
+                    <p>New borewell installation and bore motor fitting</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="sticky-bottom">
+        <div class="container">
+            <a href="#contact" class="btn btn-primary">Get Free Inquiry</a>
+        </div>
+    </div>
+   <!-- About Us Section -->
+  <!-- About Us Section -->
+       <div id="about" class="container my-5 aboutus">
+        <h2 class="text-center">About Us</h2>
+        <p>At Sri Gowtham Plumbing Works, we have over 20 years of experience in providing top-notch plumbing services.</p>
+        <ul>
+            <li>Our team of certified professionals is dedicated to delivering exceptional service and customer satisfaction.</li>
+            <li>We <strong>specialize in finding and resolving bathroom leakages with a guarantee</strong>, ensuring that your issues are completely rectified.</li>
+            <li>In addition to leak detection and repair, we offer <strong>comprehensive bathroom renovation services</strong> to give your space a fresh, new look.</li>
+        </ul>
+        <p>We believe in transparency, reliability, and quality workmanship. Our goal is to build long-term relationships with our clients by consistently exceeding their expectations.</p>
+    </div>
+ 
+    <!-- Testimonials Section -->
+    <div class="container my-5">
+        <h2 class="text-center">What Our Customers Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Excellent service! Highly recommend.</p>
+                    <footer class="blockquote-footer">John Doe</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Prompt and professional. Fixed my plumbing issue quickly.</p>
+                    <footer class="blockquote-footer">Jane Smith</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Great experience from start to finish.</p>
+                    <footer class="blockquote-footer">Michael Johnson</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    
+ <!-- Contact Form Section -->
+<div id="contact" class="container my-5 mx-5">
+    <h2 class="text-center">Contact Us</h2>
+    <form action="/submit-booking/" 
+    method="post">
+    {% csrf_token %}
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Your Name" name="name" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="inputPhone" placeholder="Your PhoneNumber" required name="phone">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="service">Select Service</label>
+                <select class="form-control" id="inputService" name="service" required>
+                    <option>Bathroom Leakages</option>
+                    <option>Water Line Airblock Detection</option>
+                    <option>Emergency Plumbing Services</option>
+                    <option>Pipe Leakage Detection</option>
+                    <option>Tank Leakage problem</option>
+                    <option>New Building Plumbing</option>
+                    <option>Rainwater Saving harvest</option>
+                    <option>New Borewell Installation</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="location">Current Location</label>
+                <input type="text" class="form-control" id="inputLocation" placeholder="Click to get your location" readonly name="location" required>
+                <button type="button" class="btn btn-secondary mt-2" onclick="getLocation()">Get Current Location</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="inputMessage" rows="4" placeholder="Your Message" name="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Book Now</button>
+    </form>
+</div>
+
+ 
+
+
+
+
+    <!-- Map Section -->
+    <div class="container my-5">
+        <h2 class="text-center">Our Location</h2>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=sri%20gowtham%20plumbing%20works&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+        <style>
+            .mapouter {position:relative;text-align:right;height:400px;width:100%;}
+            .gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}
+        </style>
+    </div>
+
+    <!-- FAQ Section -->
+     <div class="container my-5">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What services do you offer?
+                        </button>
+                    </h5>
+                </div>
+                 
+                    <div class="container my-5">
+                        <div id="accordion">
+                            <!-- Accordion Item 1 -->
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Collapsible Group Item #1
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Content for the first collapsible section.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Accordion Item 2 -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Collapsible Group Item #2
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Content for the second collapsible section.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Accordion Item 3 -->
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Content for the third collapsible section.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+              
+                
+                <script>
+                function getLocation() {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else {
+                        alert("Geolocation is not supported by this browser.");
+                    }
+                }
+            
+                function showPosition(position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    document.getElementById("inputLocation").value = `Latitude: ${latitude}, Longitude: ${longitude}`;
+                }
+
+                document.addEventListener('DOMContentLoaded', function() {
+  // Smooth scroll on nav links (using vanilla JavaScript)
+  document.querySelectorAll('.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Add animations on scroll
+  window.addEventListener('scroll', function() {
+    document.querySelectorAll('.section').forEach(section => {
+      const position = section.offsetTop;
+      const scroll = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      if (scroll > position - windowHeight + 200) {
+        section.classList.add('active');
+      }
+    });
+  });
+});
+
+            </script>     
+ 
+</body>
+</html>

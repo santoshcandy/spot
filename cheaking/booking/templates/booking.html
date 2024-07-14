@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Booking</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'booking.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Book a Plumber</h1>
+        <form action="/submit-booking/" 
+        method="post" >
+        {% csrf_token %}
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="location">Location</label>
+            <textarea id="location" name="location" required></textarea>
+            
+             
+            
+            
+            
+            <label for="service">Service Required</label>
+            <select id="service" name="service" required>
+                <option value="general">General Plumbing</option>
+                <option value="installation">Installation</option>
+                <option value="repair">Repair</option>
+                <option value="maintenance">Maintenance</option>
+            </select>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
